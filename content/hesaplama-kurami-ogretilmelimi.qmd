@@ -1,0 +1,27 @@
+## Hesaplama Kuramı Bilgisayar Mühendisliğinde Ders Olmalı mı, Olmamalı mı?
+
+
+### Eleştirel Yaklaşım ("Zorunlu Olmamalı" Görüşü)
+
+  * **Sektörel Pratiklik**: Yazılımcıların büyük çoğunluğunun meslek hayatında sıfırdan derleyici yazmaması.
+  * **Hazır Araçlar**: ANTLR, Lex, Yacc, Bison gibi hazır parser üreteçlerinin yaygın kullanımı.
+  * **Odak Noktası**: Sektördeki performans ve sistem sorunlarının otomatlardan ziyade veritabanı veya ağ mimarisi hatalarından kaynaklanması.
+
+### Mühendislik Savunması 
+
+Hesaplama Sınırları ve Karmaşıklık
+
+  * **Çözülemezlik Sınırları**: **Durma Problemi (Halting Problem)** ve çözülemezlik (undecidability) kavramını bilerek imkansız algoritmalar yazmaktan kaçınma.
+  * **Problem Karmaşıklığı**: **NP-Hard / NP-Complete** problemleri tanıyıp imkansız kesin çözümler yerine sezgisel (heuristic) yöntemlere yönelme.
+
+### Mühendislik Savunması
+
+Sistem Mimarisi, Güvenlik ve Kalıcı Teorik Temel
+
+  * **Sistem Mimarisi**: Oyun döngüleri, ağ protokolleri ve durum tabanlı mikroservis tasarımında **Sonlu Durum Makineleri (FSM)**.
+
+  * **Yazılım Güvenliği**: Güvenli parser tasarımı ve Regex çalışma mantığını bilerek **ReDoS (Regular Expression Denial of Service)** açıklarını engelleme.
+
+  * **Teorinin Kalıcılığı**: Programlama dilleri ve kütüphaneler eskir; ancak otomatlar ve hesaplama kuramının matematiksel temeli değişmez.
+
+  * Turing machines/complete
