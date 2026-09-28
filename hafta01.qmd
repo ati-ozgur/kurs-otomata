@@ -1,4 +1,6 @@
 # Hafta 01
 
+{{< include ./content/Hafta01Ders01.qmd >}}
+
 
 {{< include ./content/tables/table-otomatlar-hiyerarsisi-karsilaştirma.md >}}

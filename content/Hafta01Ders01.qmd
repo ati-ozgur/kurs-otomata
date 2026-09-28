@@ -1,0 +1,25 @@
+## Hesaplama Kuramı, Derleyici (Compiler) ve Bilgisayar Mühendisliğindeki Yeri
+
+
+### Giriş ve Derleyici Mimarisine Genel Bakış
+
+  * Kaynak Kodun (Source Text) Biçimsel Dillerdeki Karşılığı: Alfabe (\\(\Sigma\\)) üzerindeki **katar (string)** kavramı.
+  * Derleyicinin İki Ana Safhası: **Analiz (Frontend)** ve **Sentez (Backend)** evreleri.
+  * Hesaplama kuramı modellerinin derleyici mimarisindeki katmanlı rolü.
+
+## Sözcüksel Analiz (Lexical Analysis / Scanner)
+
+  * Kaynak kodun atomik **jetonlara (token)** ayrıştırılması.
+  * **Düzenli İfadeler (RE)** ve **Sonlu Durum Otomatları (DFA / NFA)** kullanımı.
+  * **Tip-3 Düzenli Diller (Regular Languages)** katmanı ve Unix `lex` gibi otomatik tarayıcı üreteçleri.
+
+## Sözdizimsel Analiz (Syntax Analysis / Parser)
+
+  * Jeton dizilimlerinin dilbilgisi kurallarına uygunluğunun denetimi ve **türetme ağacı (parse tree)** oluşumu.
+  * **Bağlamdan Bağımsız Gramerler (CFG)** ve **Yığınlı Otomatlar (Pushdown Automata - PDA)**.
+  * **Tip-2 Bağlamdan Bağımsız Diller (CFL)** katmanı ve Unix `yacc` gibi ayrıştırıcı araçları.
+
+## Anlamsal Temsil (Semantic Representation) ve Kod Üretimi
+
+  * Tip kontrolü, anlamsal doğrulama ve **Ara Temsil (Intermediate Representation - IR)** oluşturma.
+  * Sentez (Backend) aşamasında hedef makine koduna (.exe) dönüşüm ve kuramın derleyici yazılımındaki doğrudan uygulaması.
