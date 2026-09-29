@@ -1,0 +1,18 @@
+## Otomatlar Hiyerarşisi Karşılaştırması ve Genel Kuram Özeti**
+
+### Chomsky Hiyerarşisi ve Bellek Yapıları
+
+  * Otomatların **geçici bellek kapasitesi** ve **belleğe erişim esnekliğine** göre sınıflandırılması.
+  * Bellek kapasitesi ve erişim gücü arttıkça otomatın tanıdığı dil kümesinin genişlemesi.
+
+### Hiyerarşinin Seviyeleri ve Soyut Makineler
+
+  * **Tip-3 (Sonlu Otomat - FA)**: Harici belleği yoktur; yalnızca mevcut durumu tutar; Düzenli Dilleri tanır.
+
+  * **Tip-2 (Yığınlı Otomat - PDA)**: **Stack (LIFO)** belleğe sahiptir; Bağlamdan Bağımsız Dilleri (CFL) tanır.
+  * **Tip-1 (Doğrusal Sınırlı Otomat - LBA)**: Girdi boyutuyla sınırlı şerit bellek kullanır; Bağlama Duyarlı Dilleri (CSL) tanır.
+  * **Tip-0 (Turing Makinesi - TM)**: **Sonsuz RAM / Şerit** belleğe sahiptir; genel hesaplama modelidir.
+
+### Otomatlar Hiyerarşisi Karşılaştırma Tablosu
+
+{{< include ./content/tables/table-otomatlar-hiyerarsisi-karsilaştirma.md >}}

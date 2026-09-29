@@ -8,6 +8,7 @@ book:
   chapters:
     - index.qmd
     - intro.qmd
+    - Sorular.qmd
     - hafta01.qmd
     - summary.qmd
     - references.qmd
