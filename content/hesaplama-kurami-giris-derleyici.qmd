@@ -1,10 +1,13 @@
 ## Hesaplama Kuramı, Derleyici (Compiler) ve Bilgisayar Mühendisliğindeki Yeri
 
 
-## Derleyici Çalışması
+## Derleyici Çalışması 1
 
 ![Derleyici Nasıl Çalışır](./content/images/derleyici-calismasi.jpeg)
 
+## Derleyici Çalışması 2
+
+![Derleyici Nasıl Çalışır 2](./content/images/derleyici-calismasi2.jpeg)
 
 ## Giriş ve Derleyici Mimarisine Genel Bakış
 

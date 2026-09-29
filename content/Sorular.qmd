@@ -2,4 +2,10 @@
 
 1. Turing complete
 2. NP Complete/NP Hard
+3. Regular Expressions
+
+
+## En Önemli 5 kavram
+
+{{< include ./content/tables/table-5-en-onemli-kavram.md>}}
 
