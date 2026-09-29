@@ -7,5 +7,6 @@
 
 ## En Önemli 5 kavram
 
-{{< include ./content/tables/table-5-en-onemli-kavram.md>}}
+{{< include ./content/tables/table-5-en-onemli-kavram.md >}}
+
 
