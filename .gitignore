@@ -1,3 +1,4 @@
+*site_libs/*
 *.html
 *_files/*
 _book/*
