@@ -2,8 +2,8 @@ project:
   type: book
 
 book:
-  title: "hesaplama-kurami"
-  author: "Norah Jones"
+  title: "Hesaplama Kuramı"
+  author: "Atilla Özgür"
   date: "9/28/2026"
   chapters:
     - index.qmd
