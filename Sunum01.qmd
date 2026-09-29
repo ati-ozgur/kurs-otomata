@@ -1,0 +1,7 @@
+---
+title: "Hesaplama Kuramı Ders 01"
+author: "Atilla Özgür"
+format: revealjs
+---
+
+{{< include ./hafta01.qmd >}}
