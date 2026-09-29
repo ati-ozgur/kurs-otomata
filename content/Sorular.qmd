@@ -1,4 +1,4 @@
-# Sorular
+## Sorular
 
 1. Turing complete
 2. NP Complete/NP Hard

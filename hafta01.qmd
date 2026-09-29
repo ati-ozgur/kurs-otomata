@@ -1,5 +1,9 @@
 # Hafta 01
 
+{{< include ./content/Sorular.qmd >}}
+
+
+
 {{< include ./content/Hafta01Ders01.qmd >}}
 
 {{< include ./content/hesaplama-kurami-ogretilmelimi.qmd >}}
@@ -8,4 +12,3 @@
 
 
 
-{{< include ./content/tables/table-otomatlar-hiyerarsisi-karsilaştirma.md >}}

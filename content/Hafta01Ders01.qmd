@@ -1,6 +1,11 @@
 ## Hesaplama Kuramı, Derleyici (Compiler) ve Bilgisayar Mühendisliğindeki Yeri
 
 
+### Derleyici Çalışması
+
+![](./content/images/derleyici-calismasi.jpeg)
+
+
 ### Giriş ve Derleyici Mimarisine Genel Bakış
 
   * Kaynak Kodun (Source Text) Biçimsel Dillerdeki Karşılığı: Alfabe (\\(\Sigma\\)) üzerindeki **katar (string)** kavramı.
