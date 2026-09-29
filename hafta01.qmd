@@ -4,7 +4,7 @@
 
 
 
-{{< include ./content/Hafta01Ders01.qmd >}}
+{{< include ./content/hesaplama-kurami-giris-derleyici.qmd >}}
 
 {{< include ./content/hesaplama-kurami-ogretilmelimi.qmd >}}
 
