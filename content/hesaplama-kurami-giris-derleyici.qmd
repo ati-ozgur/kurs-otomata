@@ -1,12 +1,12 @@
 ## Hesaplama Kuramı, Derleyici (Compiler) ve Bilgisayar Mühendisliğindeki Yeri
 
 
-### Derleyici Çalışması
+## Derleyici Çalışması
 
-![](./content/images/derleyici-calismasi.jpeg)
+![Derleyici Nasıl Çalışır](./content/images/derleyici-calismasi.jpeg)
 
 
-### Giriş ve Derleyici Mimarisine Genel Bakış
+## Giriş ve Derleyici Mimarisine Genel Bakış
 
   * Kaynak Kodun (Source Text) Biçimsel Dillerdeki Karşılığı: Alfabe (\\(\Sigma\\)) üzerindeki **katar (string)** kavramı.
   * Derleyicinin İki Ana Safhası: **Analiz (Frontend)** ve **Sentez (Backend)** evreleri.
