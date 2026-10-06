@@ -13,4 +13,4 @@ my_dfa = DFA(
     initial_state='q0',
     final_states={'q1'}
 )
-my_dfa.show_diagram()
+my_dfa.show_diagram(path="example1.png")
