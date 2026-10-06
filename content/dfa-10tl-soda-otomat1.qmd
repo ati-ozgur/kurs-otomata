@@ -1,0 +1,62 @@
+
+## Senaryo: 10 TL'lik Soda Otomatı
+
+Soda fiyatının 10 TL olduğu bir otomat düşünelim.
+
+**Kurallar**
+
+1. Otomat sadece 5 TL madeni para kabul eder.
+2. Para üstü verme veya para iadesi özelliği yoktur.
+3. Toplamda 10 TL'ye ulaşıldığında, otomat Soda Ver (kabul) durumuna geçilir.
+
+
+**Geçiş Tablosu**
+
+| Mevcut Durum (Bakiye)      | Girdi: 5 TL Atıldığında | Yeni Durum                                          |
+|----------------------------|-------------------------|-----------------------------------------------------|
+| $\rightarrow q_0$ (0 TL)   | $q_5$                   | Bakiye 5 TL olur                                    |
+| $q_5$ (5 TL)               | $q_{soda}$              | Bakiye 10 TL olur (Soda verilir)                    |
+| $*q_{soda}$ (10 TL - Soda) | $q_{soda}$              | Soda verildikten sonra makine kabul durumunda kalır |
+
+
+**Durum Diyagramı**
+
+
+```
+
+5 TL                 5 TL                 5 TL
+      ┌───────────┐        ┌───────────┐        ┌───────────┐
+──►┌──┴──┐        └──►┌────┴┐        └──►┌──────┴──────┐   │
+   │ q_0 │            │ q_5 │            │ *(q_soda)   ├───┘
+   └─────┘            └─────┘            └─────────────┘
+   (0 TL)             (5 TL)              (Soda Verildi)
+```
+{{< include content/diagrams/soda-10tl-mermaid-state.md >}}
+
+{{< include content/diagrams/soda-10tl-mermaid-flow.md >}}
+
+
+**Adım Adım İşleyiş Örnekleri**
+
+
+**Örnek 1:** İki Tane 5 TL Atılması (Toplam 10 TL)
+
+1. Otomat $q_0$ durumunda başlar (Bakiye: 0 TL).
+2. Birinci 5 TL atılır $\rightarrow$ $q_5$ durumuna geçilir (Bakiye: 5 TL).
+3. İkinci 5 TL atılır $\rightarrow$ $q_{soda}$ durumuna geçilir (Bakiye: 10 TL).
+4. Sonuç: $q_{soda}$ kabul durumuna ulaşıldı $\rightarrow$ **KABUL** (Soda düşer!).
+
+**Örnek 2:** Sadece Bir Tane 5 TL Atılması (Toplam 5 TL)
+
+1. Otomat $q_0$ durumunda başlar (Bakiye: 0 TL).
+2. Birinci 5 TL atılır $\rightarrow$ $q_5$ durumuna geçilir (Bakiye: 5 TL).
+3. Başka para atılmadan beklenir.
+4. Sonuç: Otomat $q_5$ durumunda kalır. $q_5$ kabul durumu olmadığı için işlem **REDDEDİLİR** (Soda verilmez).
+
+**Önemli Noktalar**
+
+1. Belirlilik (Deterministic): Hangi durumda olursanız olun, 5 TL attığınızda bir sonraki durumun ne olacağı %100 bellidir.
+
+2. Sonlu Hafıza (Finite Memory): Otomat sonsuz veri saklamaz; sadece 3 farklı durumu (state) ($0\text{ TL}$, $5\text{ TL}$ ve $10\text{ TL}$) vardır.
+
+
