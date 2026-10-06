@@ -48,3 +48,13 @@ Soda fiyatının 10 TL olduğu bir otomat düşünelim.
 2. Sonlu Hafıza (Finite Memory): Otomat sonsuz veri saklamaz; sadece 3 farklı durumu (state) ($0\text{ TL}$, $5\text{ TL}$ ve $10\text{ TL}$) vardır.
 
 
+**Resmi tanım**
+
+Otomatları tanımlarken aşağıdaki bilgileri vererek resmi tanımlarını yaparız.
+
+1. $Q$: Sonlu durumlar kümesi.
+2. $\Sigma$: Alfabe: 
+3. $\delta$: Geçiş fonksiyonu ($Q \times \Sigma \rightarrow Q$)
+
+4. $q_0$ Başlangıç durumu: ($Start\ State$)
+5. $F$: Kabul durumları kümesi ($Accept\ States$).
