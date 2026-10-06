@@ -38,6 +38,7 @@ Soda fiyatının 10 TL olduğu bir otomat düşünelim.
 ```
 {{< include diagrams/soda-10tl-mermaid-state.md >}}
 
+{{< include diagrams/soda-10tl-mermaid-flow.md >}}
 
 
 **Adım Adım İşleyiş Örnekleri**
