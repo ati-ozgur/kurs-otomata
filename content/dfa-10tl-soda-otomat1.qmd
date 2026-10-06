@@ -58,3 +58,44 @@ Otomatları tanımlarken aşağıdaki bilgileri vererek resmi tanımlarını yap
 
 4. $q_0$ Başlangıç durumu: ($Start\ State$)
 5. $F$: Kabul durumları kümesi ($Accept\ States$).
+
+**Resmi tanım özellikleri**
+
+
+1. $Q$ (Sonlu Durumlar Kümesi)
+
+Makinenin sahip olabileceği tüm  durumlar:
+
+
+$$Q = \{q_0, q_5, q_{soda}\}$$
+
+* $q_0$: Bakiye 0 TL
+* $q_5$: Bakiye 5 TL
+* $q_{soda}$: Bakiye 10 TL (Soda Verildi)
+
+2. $\Sigma$ (Girdi Alfabesi)
+
+Otomata atılabilecek kabul edilen semboller/girdiler:
+
+
+$$\Sigma = \{5\}$$
+
+3. $\delta$ (Geçiş Fonksiyonu: $Q \times \Sigma \rightarrow Q$)
+
+Geçişler formal küme eşleşmesi veya liste olarak şu şekilde tanımlanır:
+
+$$\begin{aligned} \delta(q_0, 5) &= q_5 \\ \delta(q_5, 5) &= q_{soda} \\ \delta(q_{soda}, 5) &= q_{soda} \end{aligned}$$
+
+4. $q_0$ (Başlangıç Durumu)
+
+Makinenin sıfır bakiye ile başladığı durum:
+
+$$q_0 = q_0$$
+
+5. $F$ (Kabul Durumları Kümesi)
+
+Sodanın verilmesini (başarılı tamamlanmayı) temsil eden durumlar kümesi:
+
+
+$$F = \{q_{soda}\}$$
+
