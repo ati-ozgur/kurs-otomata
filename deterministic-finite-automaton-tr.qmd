@@ -26,6 +26,18 @@ Soda fiyatının 10 TL olduğu bir otomat düşünelim.
 
 **Durum Diyagramı**
 
+
+```
+
+5 TL                 5 TL                 5 TL
+      ┌───────────┐        ┌───────────┐        ┌───────────┐
+──►┌──┴──┐        └──►┌────┴┐        └──►┌──────┴──────┐   │
+   │ q_0 │            │ q_5 │            │ *(q_soda)   ├───┘
+   └─────┘            └─────┘            └─────────────┘
+   (0 TL)             (5 TL)              (Soda Verildi)
+```
+
+
 ```{mermaid}
 stateDiagram-v2
     direction LR
