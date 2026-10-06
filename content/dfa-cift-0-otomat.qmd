@@ -1,0 +1,87 @@
+## Senaryo: Çift sayıda '0' içeren girdileri kabul eden otomat
+
+
+Bir bilgisayar, bir lamba anahtarına $N$ kez basıldıktan sonra lambanın AÇIK mı yoksa KAPALI mı olduğunu nasıl anlar?"
+
+
+* **Hafızasız durum makineleri (memoryless state machines)**, sadece var olan durum hakkında bilgi sahibidirler.
+
+
+**Kurallar**
+
+1. İçinde **çift sayıda** `0` bulunan dizgileri (hiç `0` bulunmaması da dahil) kabul edilir.
+2.  Tek sayıda `0` içeren dizgileri red edilir.
+
+
+* **Alfabe ($\Sigma$):** $\{0, 1\}$
+* **Görev:** 
+* **Durumlar ($Q$):** $\{q_{çift}, q_{tek}\}$
+* $q_{çift}$: Şu ana kadar görülen `0` sayısı çift. (Başlangıç ve Kabul Durumu)
+* $q_{tek}$: Şu ana kadar görülen `0` sayısı tek.
+
+
+**Resmi Tanım**
+
+BSO'lar 5'li demet $(Q, \Sigma, \delta, q_0, F)$ olarak tanımlanır:
+
+1. **$Q = \{q_{çift}, q_{tek}\}$** — Durumlar kümesi.
+2. **$\Sigma = \{0, 1\}$** — Girdi alfabesi.
+3. $\delta$: Geçiş fonksiyonu ($Q \times \Sigma \rightarrow Q$)
+
+4. **$q_0 = q_{çift}$** — Başlangıç durumu.
+5. **$F = \{q_{çift}\}$** — Kabul (final) durumları kümesi.
+
+
+
+
+
+
+
+**Geçiş Tablosu**
+
+| Durum | Girdi: `0` | Girdi: `1` |
+| --- | --- | --- |
+| **$\rightarrow *q_{çift}$** | $q_{tek}$ | $q_{çift}$ |
+| **$q_{tek}$** | $q_{çift}$ | $q_{tek}$ |
+
+*Not: $\rightarrow$ başlangıç durumunu, $*$ ise kabul (bitiş) durumunu gösterir.*
+
+
+**Durum Diyagramı**
+
+![](content/images/dfa-cift-0-otomat1)
+
+
+
+
+- `1` girdisi `0` sayısını etkilemediği için makine kendi bulunduğu durumda kalır (kendi üzerine döngü/self-loop). 
+- `0` girdisi geldiğinde ise tek/çift durumu değişir.
+
+
+
+* **Örnek 1: `1010` dizgisi (Kabul Edilir)**
+
+$$q_{çift} \xrightarrow{\mathbf{1}} q_{çift} \xrightarrow{\mathbf{0}} q_{tek} \xrightarrow{\mathbf{1}} q_{tek} \xrightarrow{\mathbf{0}} q_{çift} \quad (q_{çift} \in F \rightarrow \textbf{Kabul})$$
+
+
+* **Örnek 2: `101` dizgisi (Reddedilir)**
+
+$$q_{çift} \xrightarrow{\mathbf{1}} q_{çift} \xrightarrow{\mathbf{0}} q_{tek} \xrightarrow{\mathbf{1}} q_{tek} \quad (q_{tek} \notin F \rightarrow \textbf{Red})$$
+
+
+* **Boş Dizgi ($\epsilon$):** Okuma yapılmadan $q_{çift}$ durumunda kalınır. 
+İçinde 0 adet '0' vardır (0 çift bir sayıdır), dolayısıyla $\epsilon$ da kabul edilir.
+
+
+**Ekstra Soru**
+
+- "Bu BSO'yu, '01' ile biten dizgileri kabul edecek şekilde nasıl değiştirirsiniz?"
+
+:::{.callout-tip}
+Belirli (Deterministik) olma kuralı: Her durumdan, alfabedeki her sembol için **tam olarak bir** çıkış oku olmalıdır.
+:::
+
+:::{.callout-tip}
+Düzenli diller (regular languages), sonlu otomatlar tarafından tanınabilen dillerdir.
+:::
+

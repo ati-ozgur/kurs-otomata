@@ -6,3 +6,6 @@ Belirlenimli Sonlu Otomat (BSO) ingilizcesi Deterministic finite automaton (DFA)
 
 {{< include content/dfa-10tl-soda-otomat1.qmd >}}
 
+{{< include content/dfa-cift-0-otomat.qmd >}}
+
+
