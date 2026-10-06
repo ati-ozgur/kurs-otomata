@@ -13,4 +13,10 @@ my_dfa = DFA(
     initial_state='q0',
     final_states={'q_soda'}
 )
-my_dfa.show_diagram(path="dfa-10tl-soda-otomat1.pdf")
+file_path="../content/images/dfa-10tl-soda-otomat1"
+file_path_pdf = file_path + ".pdf"
+file_path_png = file_path + ".png"
+my_dfa.show_diagram(path=file_path_pdf)
+print("saved to",file_path_pdf)
+my_dfa.show_diagram(path=file_path_png)
+print("saved to",file_path_png)
