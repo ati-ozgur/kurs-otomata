@@ -1,0 +1,43 @@
+# Belirlenimli Sonlu Otomat 
+
+Belirlenimli Sonlu Otomat (BSO) ingilizcesi Deterministic finite automaton (DFA) işleyeceğimiz en basit makinedir.
+
+Önce örnekler ile başlayacağız arkasından teorik bilgileri vereceğiz.
+
+## Senaryo: 10 TL'lik Soda Otomatı
+
+Soda fiyatının 10 TL olduğu bir otomat düşünelim.
+
+**Kurallar**
+
+1. Otomat sadece 5 TL madeni para kabul eder.
+2. Para üstü verme veya para iadesi özelliği yoktur.
+3. Toplamda 10 TL'ye ulaşıldığında, otomat Soda Ver (kabul) durumuna geçilir.
+
+
+**Geçiş Tablosu**
+
+| Mevcut Durum (Bakiye)      | Girdi: 5 TL Atıldığında | Yeni Durum                                          |
+|----------------------------|-------------------------|-----------------------------------------------------|
+| $\rightarrow q_0$ (0 TL)   | $q_5$                   | Bakiye 5 TL olur                                    |
+| $q_5$ (5 TL)               | $q_{soda}$              | Bakiye 10 TL olur (Soda verilir)                    |
+| $*q_{soda}$ (10 TL - Soda) | $q_{soda}$              | Soda verildikten sonra makine kabul durumunda kalır |
+
+
+**Durum Diyagramı**
+
+```{mermaid}
+stateDiagram-v2
+    direction LR
+
+    [*] --> q0 : Başlangıç
+    q0 --> q5 : 5 TL
+    q5 --> q_soda : 5 TL
+    q_soda --> q_soda : 5 TL
+
+    q0 : q0 (0 TL)
+    q5 : q5 (5 TL)
+    q_soda : q_soda (10 TL) [Kabul Durumu]  
+```
+
+
