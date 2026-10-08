@@ -8,4 +8,4 @@ Belirlenimli Sonlu Otomat (BSO) ingilizcesi Deterministic finite automaton (DFA)
 
 {{< include content/dfa-cift-0-otomat.qmd >}}
 
-
+{{< include content/dfa-sorular-alfabe-01.md >}}
