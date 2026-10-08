@@ -5,7 +5,9 @@ project:
 book:
   title: "Hesaplama Kuramı"
   author: "Atilla Özgür"
-  date: "9/28/2026"
+  date: today
+  date-format: "YYYY-MM-DD"
+  cover-image: cover.png
   chapters:
     - index.qmd
     - intro.qmd
