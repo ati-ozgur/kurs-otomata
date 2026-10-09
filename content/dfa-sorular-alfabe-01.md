@@ -14,6 +14,8 @@ Alfabe $\{0, 1\}$'dir.
 4. $\{w \mid w \text{ uzunluğu en az 3'tür ve 3. sembolü '0'dır}\}$   
 ÇÖZÜLDÜ
 
+5. $\{w \mid w \text{ '0' ile başlar ve tek uzunluktadır}\}$   
+
 5. $\{w \mid w \text{ '0' ile başlar ve tek uzunluktadır, VEYA '1' ile başlar ve çift uzunluktadır}\}$   
 
 6. $\{w \mid w \text{, 110 alt dizesini içermez: } \}$   
@@ -43,4 +45,4 @@ Alfabe $\{0, 1\}$'dir.
 
 19. 0 ile başlayan dizeler
 
-20. $$\{w \mid w \text{,  '0' ile başladığında 0 biter ve 1 ile başladığında 1 ile biter.}\}$$
+20. $\{w \mid w \text{,  '0' ile başladığında 0 biter ve 1 ile başladığında 1 ile biter.}\}$
