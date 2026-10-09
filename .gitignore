@@ -1,3 +1,4 @@
+*.tex
 *site_libs/*
 *.html
 *_files/*
