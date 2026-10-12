@@ -1,3 +1,3 @@
-## 10 TL soda otomat, iptal ve soda ver ekleme
+## 10 TL soda otomat, iptal ve soda ver ekleme {#sec-sorular-dfa-10tl-soda-otamat-iptal}
 
 ![](/content/images/dfa-10tl-soda-otamat-iptal)

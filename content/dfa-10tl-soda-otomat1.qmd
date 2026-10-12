@@ -107,4 +107,5 @@ $$F = \{q_{soda}\}$$
 Bu makineye iptal ve soda_ver girdilerini ekleyin.
 Bu girdiler için gerekirse yeni durumlar ekleyin.
 
-[Çözüm](content/sorular/dfa-10tl-soda-otamat-iptal)
+[Çözüm @sec-sorular-dfa-10tl-soda-otamat-iptal]
+
