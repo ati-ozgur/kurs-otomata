@@ -32,6 +32,8 @@ Matematiksel resmi tanım. Tablo veya diyagram olarak verilebileceği gibi doğa
 9. $$q_0 \in Q $$ Başlangıç durumu(Start State)
 
 10. $F \subseteq Q$: Kabul durumları kümesi (Accept States).
+Son durumlar (final state)'te kullanılmaktadır.
+
 
 11. $$ L(M) = A $$ makine M, A dilini tanır (recognizes) anlamına gelmektedir.
 M dil içindeki dizgiyi kabul eder.
