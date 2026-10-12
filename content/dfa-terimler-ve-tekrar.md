@@ -37,11 +37,15 @@ Matematiksel resmi tanım. Tablo veya diyagram olarak verilebileceği gibi doğa
 M dil içindeki dizgiyi kabul eder.
 
 
-
-
-1. Tuzak durumu (trap state), diğer kullanıbilen isimler:
+12. Tuzak durumu (trap state), diğer kullanıbilen isimler:
 	- dead state (ölü durum)
 	- sink state (çukur durumu)
 
+13. Boş küme DFA
 
+![](content/images/dfa-empty-set)
+
+13. DFA epsilon (0 uzunlukta dizgi)
+
+![](content/images/dfa-epsilon)
 
