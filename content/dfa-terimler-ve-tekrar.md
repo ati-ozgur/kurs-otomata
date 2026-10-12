@@ -1,0 +1,4 @@
+## BSO terimler ve tekrar
+
+
+
