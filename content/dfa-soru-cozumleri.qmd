@@ -1,0 +1,4 @@
+# BSO Soru -Çözümleri
+
+
+{{< include /content/sorular/dfa-10tl-soda-otamat-iptal.md >}}

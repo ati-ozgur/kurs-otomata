@@ -13,6 +13,7 @@ book:
     - intro.qmd
     - hafta01.qmd
     - deterministic-finite-automaton-tr.qmd
+    - content/dfa-soru-cozumleri.qmd
     - summary.qmd
     - references.qmd
 

@@ -99,3 +99,12 @@ Sodanın verilmesini (başarılı tamamlanmayı) temsil eden durumlar kümesi:
 
 $$F = \{q_{soda}\}$$
 
+
+
+**Ek sorular**
+
+- Bu makine bu hali ile kullanışlı değildir. 
+Bu makineye iptal ve soda_ver girdilerini ekleyin.
+Bu girdiler için gerekirse yeni durumlar ekleyin.
+
+[Çözüm](content/sorular/dfa-10tl-soda-otamat-iptal)

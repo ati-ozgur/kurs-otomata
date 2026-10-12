@@ -13,3 +13,6 @@ Belirlenimli Sonlu Otomat (BSO) ingilizcesi Deterministic finite automaton (DFA)
 {{< include content/dfa-terimler-ve-tekrar.md >}}
 
 {{< include content/dfa-ornek-vidyolar.md >}}
+
+
+
