@@ -13,4 +13,4 @@ dfa = DFA(
     final_states=set()  # Empty set of final states
 )
 
-save_files(dfa,"empty-set")
+save_files(dfa,"dfa-empty-set")
