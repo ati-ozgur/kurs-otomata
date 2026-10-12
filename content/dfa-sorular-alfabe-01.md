@@ -1,10 +1,14 @@
-## BSO Sorular Alfabe 0,1
+## BSO Sorular Alfabe 0,1 {#sec-bso-sorular-alfabe01}
 
 Aşağıdaki dilleri tanıyan DFA'ların durum diyagramlarını çizin. 
 Alfabe $\{0, 1\}$'dir.  
 
 1. $\{w \mid w \text{ '1' ile başlar ve '0' ile biter}\}$   
-ÇÖZÜLDÜ
+
+[Çözüm @sec-sorular-dfa-1-basla-0-bit]
+
+http://localhost:4200/content/dfa-soru-cozumleri.html#sec-sorular-dfa-1-basla-0-bit
+
 
 2. $\{w \mid w \text{ en az üç adet '1' içerir}\}$ 
 ÇÖZÜLDÜ

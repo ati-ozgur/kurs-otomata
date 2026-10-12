@@ -1,4 +1,9 @@
-# BSO Soru -Çözümleri
+# BSO Soru -Çözümleri {#bso-soru-cozumler}
 
 
-{{< include /content/sorular/dfa-10tl-soda-otamat-iptal.md >}}
+{{< include /content/sorular/dfa-10tl-soda-otamat-iptal.qmd >}}
+
+
+
+{{< include /content/sorular/dfa-1-basla-0-bit.qmd >}}
+

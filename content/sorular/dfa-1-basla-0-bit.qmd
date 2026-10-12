@@ -1,0 +1,5 @@
+## BSO  1 ile başla 0 bitme {#sec-sorular-dfa-1-basla-0-bit}
+
+$\{w \mid w \text{ '1' ile başlar ve '0' ile biter}\}$   
+
+![](/content/images/dfa_1_basla_0_bit)

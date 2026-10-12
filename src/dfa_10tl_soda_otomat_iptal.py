@@ -1,7 +1,5 @@
 from automata.fa.dfa import DFA
 from helper import save_files
-# DFA representing the soda vending machine from the diagram
-from automata.fa.dfa import DFA
 
 # DFA representing the soda vending machine
 soda_dfa = DFA(
