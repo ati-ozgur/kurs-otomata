@@ -16,7 +16,7 @@ Belirlenimli Olmayan Sonlu Otomat (BOSO) ingilizcesi Non Deterministic finite au
 
 1. Özel bir desen ile biten dizgiler 
 
-Dil: $L = \{ w \in \{0, 1\}^* \mid w \text{kelimesi 01  ile biter }\}$
+Dil: $L = \{ w \in \{0, 1\}^* \mid  \text{w kelimesi 01  ile biter }\}$
 
 
 
