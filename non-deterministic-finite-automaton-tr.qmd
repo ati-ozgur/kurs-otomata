@@ -43,3 +43,8 @@ $\Sigma = \{0, 1\}$ alfabesi üzerinde tanımlı $L = \{w \mid w = (101)^n, \, n
 
 Bu dil, sadece bir veya birden fazla kez peş peşe gelen "101" dizilerini kabul eder (örneğin: 101, 101101, 101101101 kabul edilir; boş kelime $\epsilon$, 10, 1011 vb. reddedilir).
 
+
+## Karşılaştırma tablosu
+
+{{< include ./content/tables/table-dfa-vs-nfa.md >}}
+
