@@ -14,6 +14,7 @@ book:
     - hafta01.qmd
     - deterministic-finite-automaton-tr.qmd
     - content/dfa-soru-cozumleri.qmd
+    - non-deterministic-finite-automaton-tr.qmd
     - summary.qmd
     - references.qmd
 

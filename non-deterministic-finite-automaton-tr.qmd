@@ -1,0 +1,5 @@
+# Belirlenimli Olmayan Sonlu Otomat 
+
+Belirlenimli Olmayan Sonlu Otomat (BOSO) ingilizcesi Non Deterministic finite automaton (N-DFA)'dır.
+
+
