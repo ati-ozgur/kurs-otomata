@@ -15,7 +15,8 @@ Belirlenimli Olmayan Sonlu Otomat (BOSO) ingilizcesi Non Deterministic finite au
 ## Giriş BOSO Örnekler
 
 1. Özel bir desen ile biten dizgiler 
-Dil: $L = \{ w \in \{0, 1\}^* \mid w \text{kelimesi} 01 \text{ ile biter }\}$
+
+Dil: $L = \{ w \in \{0, 1\}^* \mid w \text{kelimesi 01  ile biter }\}$
 
 
 
