@@ -4,10 +4,10 @@ from helper import save_files
 # NFA which matches strings beginning with "a", ending with "a", and
 # containing no consecutive "b"s
 nfa = NFA(
-    states={"q0", "q1", "q2"},
+    states={"q0", "q1", "q2","q3"},
     input_symbols={"a", "b"},
     transitions={
-        "q0": {"a": {"q1"}},
+        "q0": {"a": {"q1","q3"}},
         "q1": {"a": {"q1"}, "": {"q2"}},
         "q2": {"b": {"q0"}},
     },
