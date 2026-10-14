@@ -1,5 +1,5 @@
 
-from automata.fa.dfa import DFA
+
 
 def save_files(dfa,dfa_name):
 	file_path=f"../content/images/{dfa_name}"

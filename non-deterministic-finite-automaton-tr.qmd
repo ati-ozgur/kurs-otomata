@@ -9,6 +9,7 @@ Belirlenimli Olmayan Sonlu Otomat (BOSO) ingilizcesi Non Deterministic finite au
 ## Örnek BOSO Diyagram
 
 
+![](content/images/nfa-example1)
 
 
 ## Giriş BOSO Örnekler
