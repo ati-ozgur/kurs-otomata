@@ -13,6 +13,11 @@
   * **Tip-1 (Doğrusal Sınırlı Otomat - LBA)**: Girdi boyutuyla sınırlı şerit bellek kullanır; Bağlama Duyarlı Dilleri (CSL) tanır.
   * **Tip-0 (Turing Makinesi - TM)**: **Sonsuz RAM / Şerit** belleğe sahiptir; genel hesaplama modelidir.
 
+### Otomatlar Hiyerarşisi 
+
+![classes-of-automata-wikipedia](content/images/classes-of-automata-wikipedia.png)
+
+
 ### Otomatlar Hiyerarşisi Karşılaştırma Tablosu
 
 {{< include ./content/tables/table-otomatlar-hiyerarsisi-karsilaştirma.md >}}
