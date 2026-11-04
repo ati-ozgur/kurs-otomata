@@ -1,9 +1,16 @@
 # e-BOSO'dan BOSO'ya geçiş.
 
-![](content/images/enfa-example1)
+![E-BOSO-Örnek1](content/images/enfa-example1)
 
 
-![](content/images/enfa-example2)
+![E-BOSO-Örnek2](content/images/enfa-example2)
 
 
-![](content/images/enfa-example3)
+![E-BOSO-Örnek3](content/images/enfa-example3)
+
+
+![E-BOSO-Örnek4](content/images/enfa-example4)
+
+![E-BOSO-Örnek5](content/images/enfa-example5)
+
+![E-BOSO-Örnek6](content/images/enfa-example6)
