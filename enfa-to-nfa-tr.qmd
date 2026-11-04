@@ -1,3 +1,9 @@
 # e-BOSO'dan BOSO'ya geçiş.
 
 ![](content/images/enfa-example1)
+
+
+![](content/images/enfa-example2)
+
+
+![](content/images/enfa-example3)
