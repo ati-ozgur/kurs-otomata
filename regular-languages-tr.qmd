@@ -1,2 +1,94 @@
 # Düzenli Diller (Regular Languages) 
 
+## BOSO (NFA) ve BSO (DFA) ile tanımlanayaman diller var mıdır?
+
+
+
+**Evet, vardır!** 
+Belirlenimli Sonlu Otomatlar (BSO) ve Belirlenimli Olmayan Sonlu Otomatlar (BOSO) yalnızca **Düzenli Dilleri (Regular Languages)** tanıyabilir. 
+Ancak diller dünyasındaki tüm diller düzenli değildir.
+
+
+
+### **Teorik Neden: Sonlu Otomatların Hafıza Sınırı**
+
+Sonlu otomatların (DFA / NFA) en temel kısıtlaması, **harici/geçici bir bellek yapısına (temporary memory) sahip olmamalarıdır**. 
+
+* Bir sonlu otomat yalnızca o an hangi **durumda (state)** bulunduğunu hatırlayabilir.
+* Durum sayısı **sonlu (sabit)** olduğu için, otomat girdi dizisindeki sınırsız sayıdaki sembolü sayamaz, geçmişteki verileri sınırsız biçimde hafızada tutamaz veya parantez eşlemesi yapamaz.
+
+
+
+### **NFA ve DFA ile Tanımlanamayan Dil Örnekleri**
+
+1. Eşit Sayıda 0 ve 1 İçeren Katarlar
+
+$L = \{x \in \{0, 1\}^* \mid n_0(x) = n_1(x)\}$ 
+
+- Açıklama:  Karakter sırası fark etmeksizin toplam $0$ sayısı ile $1$ sayısı eşit olan tüm dizilimlerdir. 
+Otomat yine sınırsız sayma gereksinimi nedeniyle bu dili tanıyamaz.
+
+
+2. Eşit Sayıda $a$ ve $b$ Dizilimi 
+
+$$L = \{a^n b^n \mid n \ge 0\} $$
+
+
+
+- Önce $n$ tane $a$, ardından tam olarak aynı sayıda ($n$ tane) $b$ gelen katarlar kümesidir (örneğin: $\lambda, ab, aabb, aaabbb$).
+* **Neden Tanımlanamaz?** Otomatın kaç tane $a$ okunduğunu aklında tutup, ardından gelen $b$'lerin sayısı ile karşılaştırması gerekir. Sonlu sayıda durumu olan bir otomat sınırsız $n$ değerini sayamayacağı için bu dili tanıyamaz.
+* **Hangi Sınıfa Aittir?** Bu dil Tip-2 **Bağlamdan Bağımsız (Context-Free)** bir dildir ve Yığınlı Otomat (**Pushdown Automata - PDA**) kullanılarak yığıt (stack) bellekle tanınır.
+
+
+
+
+3. Palindrom Yapısı
+
+ $L = \{w c w^R \mid w \in \{0,1\}^*\}$ 
+
+- 
+- Açıklama:  Ortasında bir $c$ sembolü bulunan ve $c$'den sonraki kısmın $c$'den önceki kısmın tam tersi ($w^R$) olduğu katarlardır (örneğin: $c, 0c0, 01c10, 101c101$).
+
+* **Neden Tanımlanamaz?** Otomat $c$ gelene kadar okuduğu $w$ kısmını hafızasında saklayıp $c$'den sonra tersten eşleştirmek zorundadır. Sonlu otomatların belleği olmadığı için bu tersten eşleştirmeyi yapamaz.
+
+4. Asal Sayıdaki Dizilimler
+
+$L = \{a^p \mid p \text{ bir asal sayıdır}\}$ 
+
+
+* **Açıklama:** $a$'ların sayısının bir asal sayı ($2, 3, 5, 7, 11, \dots$) olduğu katarlardan oluşur.
+
+* **Neden Tanımlanamaz?** Asallık kontrolü sonlu bir sayaç veya döngüsel otomat durumu ile modellenemez.
+
+
+5. Üçlü Eşitlikler
+
+$L = \{a^n b^n c^n \mid n \ge 0\}$ 
+
+- Açıklama:  Sırasıyla eşit sayıda $a, b$ ve $c$ içeren katarlar kümesidir.
+- Neden Tanımlanamaz? Bu dil sonlu otomatlar bir yana, LIFO çalışan yığıt belleğe sahip PDA'lar tarafından bile tanınamaz. Tip-1 
+
+- Bağlama Duyarlı (Context-Sensitive)  bir dildir ve Doğrusal Sınırlı Otomat (**LBA**) ile tanınır.
+
+
+
+
+
+## Bu Dillerin Düzenli Olmadığı Nasıl İspatlanır?
+
+Bir dilin NFA veya DFA ile tanımlanamayacağını (yani **düzenli olmadığını**) matematiksel olarak çelişki yöntemiyle (proof by contradiction) ispatlamak için **Pumping Lemma (Pompalama Teoremi)** kullanılır.
+
+## Chomsky Hiyerarşisine kısa bakış
+
+Chomsky Hiyerarşisine kısa bakış (FA $\rightarrow$ PDA $\rightarrow$ LBA $\rightarrow$ TM).
+
+
+## Düzenli Diller ve Temel Operatörler
+
+- Düzenli dil tanımı ve dili tanıyan otomat varlığı ilkesi.
+- Üç temel düzenli operatör: 
+  * Birleşim ($A \cup B$)
+  * Bitiştirme (concatenation) ($A \cdot B$), 
+  * Kleene Yıldızı ($A^*$).
+- Operatör öncelik hiyerarşisi (Yıldız > Bitiştirme > Birleşim).
+
