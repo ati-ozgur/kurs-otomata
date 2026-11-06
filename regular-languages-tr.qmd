@@ -86,9 +86,34 @@ Chomsky Hiyerarşisine kısa bakış (FA $\rightarrow$ PDA $\rightarrow$ LBA $\r
 ## Düzenli Diller ve Temel Operatörler
 
 - Düzenli dil tanımı ve dili tanıyan otomat varlığı ilkesi.
-- Üç temel düzenli operatör: 
-  * Birleşim ($A \cup B$)
+- Üç temel düzenli operatör (Regular Operations): 
+  * Birleşim (Union): $A \cup B$)
   * Bitiştirme (concatenation) ($A \cdot B$), 
   * Kleene Yıldızı ($A^*$).
 - Operatör öncelik hiyerarşisi (Yıldız > Bitiştirme > Birleşim).
+
+**Birleşim**
+
+($A \cup B$): İki dil kümesindeki dizgilerin birleşimidir.
+
+**örnek:**
+
+$\Sigma = \{a, b\}$ alfabesi üzerinde iki diliniz varsa:
+
+1.  $L_1$ = $\{ a \text{ ile başlayan dizgiler} \}$ 
+2. $L_2$ = $\{ b \text{ ile biten dizgiler} \}$ 
+
+
+Birleşim ($L_1 \cup L_2$), $\{a, b\}$ alfabesi üzerindeki;  
+
+- ya $a$ ile başlayan, 
+- ya $b$ ile biten 
+- ya da her ikisini de sağlayan tüm dizgilerin kümesidir. 
+
+Biçimsel Küme Gösterimi: 
+
+$$L_1 \cup L_2 = \{ w \in \Sigma^* \mid w \in L_1 \text{ veya } w \in L_2 \}$$
+
+**BOSO** ile gösterimi.
+
 
