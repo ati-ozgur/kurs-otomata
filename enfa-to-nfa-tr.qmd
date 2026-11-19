@@ -86,6 +86,10 @@ q1 son durum olmasının sebebi q1'ı e-kapanışının son durum olan q3'i içe
 | q2 | {q2} | {q3} |
 | \* q3 | {q3} | ∅ |
 
+**BOSO Geçiş diyagram**
+
+![E-BOSO-2026-11-17 1](content/images/enfa-example7-nfa)
+
 **BSO Geçiş Tablosu**
 
 | Durumlar | $a$ | $b$ |
