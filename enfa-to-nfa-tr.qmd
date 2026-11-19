@@ -110,6 +110,12 @@ q1 son durum olmasının sebebi q1'ı e-kapanışının son durum olan q3'i içe
 | * F | C | F |
 |   T | T | T |
 
+**BSO Geçiş Diyagram Yeni Durum İsimleri**
+
+
+![E-BOSO-2026-11-17 1](content/images/enfa-example7-dfa)
+
+## ε-BOSO örnek 8
 
 
 ![E-BOSO-2026-11-17 2](content/images/enfa-example8)
