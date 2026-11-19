@@ -15,8 +15,24 @@
 
 ![E-BOSO-Örnek6](content/images/enfa-example6)
 
+## ε-BOSO örnek 7
 
 ![E-BOSO-2026-11-17 1](content/images/enfa-example7)
+
+Bu diyagramda ki e-BOSO'nun resmi tanımı
+
+-  M = (Q, Σ, δ, q0, F), 
+-  durumlar Q = {q0, q1, q2, q3},
+- alfabe, Σ = {a, b},
+- başlangıç durumu q0,
+- son durum  F = {q3}
+
+**Geçiş tablosu**
+
+{{< include /content/tables/table-transition-enfa-example7.md >}}
+
+
+
 
 
 ![E-BOSO-2026-11-17 2](content/images/enfa-example8)
