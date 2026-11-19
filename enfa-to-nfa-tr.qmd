@@ -88,15 +88,28 @@ q1 son durum olmasının sebebi q1'ı e-kapanışının son durum olan q3'i içe
 
 **BSO Geçiş Tablosu**
 
-| DFA State | $a$ | $b$ |
+| Durumlar | $a$ | $b$ |
 | --- | --- | --- |
-| $\rightarrow \{q_0\}$ | $\{q_1, q_2\}$ | $\{q_3\}$ |
+| $\rightarrow A$ | $\{q_1, q_2\}$ | $\{q_3\}$ |
 | $* \{q_1, q_2\}$ | $\{q_2, q_3\}$ | $\{q_1, q_3\}$ |
 | $* \{q_3\}$ | $\{q_3\}$ | $\emptyset$ |
 | $* \{q_2, q_3\}$ | $\{q_2, q_3\}$ | $\{q_3\}$ |
 | $* \{q_1, q_3\}$ | $\{q_3\}$ | $\{q_1\}$ |
 | $* \{q_1\}$ | $\{q_3\}$ | $\{q_1\}$ |
 | $\emptyset$ | $\emptyset$ | $\emptyset$ |
+
+**BSO Geçiş Tablosu Yeni Durum İsimleri**
+
+| Durumlar| $a$ | $b$ |
+| --- | --- | --- |
+| $\rightarrow$ A | B | C |
+| * B | D | E |
+| * C | C | T |
+| * D | D | C |
+| * E | C | F |
+| * F | C | F |
+|   T | T | T |
+
 
 
 ![E-BOSO-2026-11-17 2](content/images/enfa-example8)
