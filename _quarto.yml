@@ -29,6 +29,6 @@ format:
       - brand
   pdf:
     documentclass: scrreprt
-
-
-
+    pdf-engine: xelatex
+    mainfont: "DejaVu Serif"
+    sansfont: "DejaVu Sans"
