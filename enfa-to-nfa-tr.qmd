@@ -24,4 +24,26 @@
 
 ![E-BOSO-2026-11-17 2](content/images/enfa-example8)
 
+
+Bu diyagramda ki e-BOSO'nun resmi tanımı
+
+-  M = (Q, Σ, δ, q0, F), 
+-  durumlar Q = {q0, q1, q2, q3},
+- alfabe, Σ = {0, 1},
+- başlangıç durumu q0,
+- son durum  F = {q3}
+
+
+**ε-BOSO Geçiş tablosu**
+
+| State | 0 | 1 | ε |
+|---|---|---|---|
+| → q0 | {q0, q2} | ∅ | {q1} |
+| q1 | {q3} | ∅ | ∅ |
+| q2 | ∅ | {q1} | {q0} |
+| \* q3 | ∅ | {q2} | ∅ |
+
+
+## ε-BOSO örnek 9
+
 ![E-BOSO-2026-11-18 1](content/images/enfa-example9)
