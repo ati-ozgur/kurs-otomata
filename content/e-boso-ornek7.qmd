@@ -11,7 +11,7 @@ Bu diyagramda ki e-BOSO'nun resmi tanımı
 - başlangıç durumu q0,
 - son durum  F = {q3}
 
-**Geçiş tablosu**
+**ε-BOSO Geçiş tablosu**
 
 {{< include /content/tables/table-transition-enfa-example7.md >}}
 
