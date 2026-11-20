@@ -43,6 +43,19 @@ Bu diyagramda ki e-BOSO'nun resmi tanımı
 | q2 | ∅ | {q1} | {q0} |
 | \* q3 | ∅ | {q2} | ∅ |
 
+### ε-kapanış
+
+ε-kapanıs(q), q durumundan yalnızca ε-hamleleri kullanılarak ulaşılabilecek durumlar kümesidir. 
+Bu küme her zaman q durumunun kendisini de içerir.
+
+| Durum | ε-kapanış |
+|---|---|
+| q0 | {q0, q1} |
+| q1 | {q1} |
+| q2 | {q2, q0, q1} |
+| q3 | {q3} |
+
+
 
 ## ε-BOSO örnek 9
 
