@@ -85,6 +85,11 @@ Bu küme her zaman q durumunun kendisini de içerir.
 | q2 | {q0, q2, q3} | {q1} |
 | \* q3 | ∅ | {q2}  |
 
+**BOSO Geçiş Diyagramı**
+
+![E-BOSO örnek 8 BOSO Diyagram](content/images/enfa-example8-nfa)
+
+
 
 **BSO Geçiş Tablosu**
 
